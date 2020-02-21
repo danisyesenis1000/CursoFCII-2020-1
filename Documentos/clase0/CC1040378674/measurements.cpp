@@ -2,6 +2,13 @@
 #include <iomanip>
 
 
+/*
+For the sake of modularity, the calculation of geometrical measurements
+are wrapped into functions, then if the formulas for such calculations
+change, only will be necessary to change one line
+*/
+
+
 float get_perimeter(float length, float width){
     return 2 * (length + width);
 }
@@ -17,6 +24,9 @@ float get_area(float length, float width, float depth){
 }
 
 
+/*
+For make test the user input is used
+*/
 void user_input(){
     float width;
     float length;
@@ -79,7 +89,17 @@ void default_values(){
 
 
 int main(){
-    // user_input();
-    default_values();
+    int option;
+
+    std::cout << "Si desea los calculos para valores por defecto ingrese 1"
+        " y 0 para probar valores propios: ";
+    std::cin >> option;
+    std::cout << '\n';
+
+    if(option == 0){
+        user_input();
+    }else{
+        default_values();
+    }
     return 0;
 }
