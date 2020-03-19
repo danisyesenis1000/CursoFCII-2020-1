@@ -36,7 +36,7 @@ int main()
 	}
       else
 	{
-	  ancho[i1]=15.0;
+	  ancho[i1]=12.0;
 	  largo[i1]=30.0;
 	}
       peri=perimetro(ancho[i1],largo[i1]);                  //calculo el perimetro

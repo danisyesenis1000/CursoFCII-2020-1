@@ -41,4 +41,6 @@ void Rectangle::showData(){
 
     std::cout << "\tlength: " << m_length << std::endl;
     std::cout << "\twidth: " << m_width << std::endl;
+    std::cout << "\twidth: " << getPerimeter() << std::endl;
+
 }

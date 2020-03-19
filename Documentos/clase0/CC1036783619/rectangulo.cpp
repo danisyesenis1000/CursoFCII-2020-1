@@ -44,6 +44,8 @@ void Rectangulo::obtenerAncho(){
 }
 void Rectangulo::mostrarDatos(){
 	cout<<"El area es: "<<area()<<endl;
+	cout<<"El perimetro es: "<<perimetro()<<endl;
+
 }
 
 int main(){
