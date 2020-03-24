@@ -2,7 +2,6 @@
 #include <iomanip>
 #include <cmath>
 #include <cstdlib>
-#include <stdlib.h>
 #include <ctime>
 
 using std::cout;
@@ -14,7 +13,7 @@ class Adivinar{
   Adivinar();               //Constructor de la clase
   void Jugar();             //unica llamada que hara el usuario
   void AsignarCorrecto();   //Asigna el valor aleatorio entre 0 y 1000
-  void ValorUsuario();
+  void ValorUsuario();      //le pide el valor al usuario
   void MostrarMensaje();    //desplegara los mensajes en pantalla
  private:
   int intento;              //variable del intento
