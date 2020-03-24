@@ -1,0 +1,38 @@
+#include <iostream>
+#include <stdio.h>
+
+int suma(int n1, int n2){
+  int sum=0;
+
+  while(n1<=n2){
+    sum += n1;
+    n1 += 1;
+  }
+  
+  return sum;
+}
+
+int main(void){
+  int a, b;
+  int key;
+  int result;
+  
+  std::cout << "Enter two integer numbers in order: " << std::endl;
+  std::cin >> a >> b >> std::endl;
+
+  result = suma(a, b);
+  
+  std::cout << "Type 1 for printing and any other number for file" << std::endl;
+  std::cin >> key >> std::endl;
+
+  if(key == 1){
+    std::cout << "The sum is " << result << std:endl;
+  }
+
+  else {
+
+    return 0;
+  }
+
+  return 0;
+}
