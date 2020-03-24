@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+#include <stdlib.h>
 
 /*
  * punto1.cpp
