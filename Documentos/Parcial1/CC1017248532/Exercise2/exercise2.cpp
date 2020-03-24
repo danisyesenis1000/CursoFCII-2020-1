@@ -9,7 +9,7 @@ int main(){
 
   cout << "The numbers that will be printed are perfect integers." << endl;
   
-  for (int j = 1; j <= 1000; j++){ 
+  for (int j = 1; j <= 10000; j++){ 
     
     CheckIfItsPerfect(j);
   }
