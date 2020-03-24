@@ -46,7 +46,7 @@ void game(){
         cout << "Enter your guess: ";
         cin >> guess;
         
-        // Gives hint if guess is grater or less than the number
+        // Gives hint if guess is greater or less than the number
         if ( guess > number ){
             cout << "Wrong. Your guess is greater than the number" << endl;
         }
