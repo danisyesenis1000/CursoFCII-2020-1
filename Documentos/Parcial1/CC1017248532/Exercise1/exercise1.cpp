@@ -6,14 +6,14 @@
 
 using namespace std;
 
-int EnterNumber();
-void EvaluateGuess(int, int);
-bool Play();
+int EnterNumber(); //Checks if the number entered is a valid option
+void EvaluateGuess(int, int); //Checks if the number enteres is greater or less than the number to be guessed
+bool Play(); //Plays the game
 
 int main(){
   bool KeepPlaying = true;
 
-  while (KeepPlaying){
+  while (KeepPlaying){ //Plays until the player doesn't want to play anymore
 
     KeepPlaying = Play();
   }
@@ -25,7 +25,7 @@ bool Play(){
   
   srand(time(NULL));
 
-  Number = 500; //rand()%1000 + 1;
+  Number = rand()%1000 + 1; //random number between 1 and 1000
 
   cout << "Let's start, make your first guess. Remember that the number must be between 1 and 1000" << endl;
 
