@@ -1,2 +1,0 @@
-This is a test file, We will remove it.
-Cannot be removed yet, it would make the folder dissapear.
