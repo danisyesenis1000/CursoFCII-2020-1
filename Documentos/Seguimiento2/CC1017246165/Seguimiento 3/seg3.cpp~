@@ -1,0 +1,27 @@
+//Seguimiento de secuencia de Fibonacci por vectores y por listas
+
+//Librerias
+#include<iostream>
+#include<string.h>
+#include<iomanip>
+#include<vector>
+
+using namespace std;
+
+int main(){
+  int nf;
+  cout<<"Ingrese la cantidad total de números de la secuencia que desea calcular"<<endl;
+  cin>>nf;
+  int fnl[nf];
+  for(int i=0;i<nf;i++){
+    if (i==0){
+      fnl[i]=0
+	}
+    if (i==1){
+      fnl[i]=1
+	}
+    else{
+      fnl[i]=fnl[i-1]+fnl[i-2]
+	}
+  }
+}
