@@ -9,7 +9,7 @@ using namespace std;
 void Fibonacci_arreglo(int n_elem)
 {
   cout<<"La lista de los primeros "<<n_elem<< " números de Fibonacci, empleando arreglos es: "<<endl;
-  int Arr[n_elem];
+  unsigned long int Arr[n_elem];
   Arr[0] = 0;  //Definimos los primeros dos numeros de Fibonacci
   Arr[1] = 1;
   cout<< Arr[0]<< setw(3)<< Arr[1]<< setw(3);
@@ -24,7 +24,7 @@ void Fibonacci_arreglo(int n_elem)
 void Fibonacci_vector(int n_elem)
 {
   cout<<"El VECTOR con los primeros "<<n_elem<<" números de Fibonacci es:"<<endl;
-  vector <int> fibonachi(2);   //inicialmente el vector tiene 2 entradas
+  vector <unsigned long int> fibonachi(2);   //inicialmente el vector tiene 2 entradas
   fibonachi[0]= 0;
   fibonachi[1]= 1;
   cout<< fibonachi[0]<< setw(3)<< fibonachi[1]<< setw(3);
