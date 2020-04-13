@@ -2,7 +2,7 @@
 todas las ocurrencias de la letra e con la letra x.*/
 
 #include<iostream>
-#include<conio.h>
+//#include<conio.h>
 #include<string>
 
 using namespace std;
@@ -22,6 +22,6 @@ int main(){
 	cout<<"El caracter modificado es: "<<endl;
 	cout<<caracter;
 	
-	getch(); // Evita que el ejecutable se cierre
+	//getch(); // Evita que el ejecutable se cierre
 	return 0;
 }

@@ -8,7 +8,7 @@ la salida del programa 4-2. (Sólo se ha cambiado la primera ocurrencia de
 lo buscado en la secuencia.) */
 
 #include<iostream>
-#include<conio.h>
+//#include<conio.h>
 #include<string>
 
 using namespace std;
@@ -31,6 +31,6 @@ int main(){
 	cout<<"El caracter modificado es: "<<endl;
 	cout<<caracter;
 	
-	getch(); // Evita que el ejecutable se cierre
+	//getch(); // Evita que el ejecutable se cierre
 	return 0;
 }

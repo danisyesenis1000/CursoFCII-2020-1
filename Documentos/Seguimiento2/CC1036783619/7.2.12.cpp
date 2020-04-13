@@ -5,7 +5,7 @@ programa 4-2 y el usuario introduce que 4 ha de ser reemplazado por 3, la cade
 resultante será La figura 3-4 ilustra la salida del programa 3-2.*/
 
 #include<iostream>
-#include<conio.h>
+//#include<conio.h>
 #include<string>
 
 using namespace std;
@@ -31,6 +31,6 @@ int main(){
 	cout<<"El caracter modificado es: "<<endl;
 	cout<<caracter;
 	
-	getch(); // Evita que el ejecutable se cierre
+	//getch(); // Evita que el ejecutable se cierre
 	return 0;
 }
