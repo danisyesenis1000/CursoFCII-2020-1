@@ -29,6 +29,7 @@ int main(){
     }
     
     create_payroll_table( payroll_tab );
+    payroll_tab.close();
     
     // Read file and calculate payroll
     ifstream payroll_data( "payroll.dat", ios::in );
@@ -75,6 +76,7 @@ void calculate_payroll( ifstream& payroll_data ){
         
         cout << left << setw(15) << fullname << " " 
              << setw(27) << id_number << " " 
-             << setw(15) << total_pay << endl;
+             << setw(15) << fixed << setprecision(2) << total_pay
+             << endl;
     }
 }
