@@ -60,3 +60,4 @@ for ( ; *sPtr != '\0'; sPtr++ ) // no hay inicialización
   cout << *sPtr; // muestra el carácter sin modificación
 }
 
+n
