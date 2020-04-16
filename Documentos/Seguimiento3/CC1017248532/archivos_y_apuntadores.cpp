@@ -1,8 +1,14 @@
 /* Solo es necesario correr este código! */
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <string>
+#include <vector>
+#include <iomanip>
 
-#include "crear_archivo.h"
+using namespace std;
 
-
+void CrearArchivo(string);
 void CalcularIngresoBruto(ifstream *, string);
 void ImprimirLinea(string, string, float, int);
 
@@ -70,4 +76,30 @@ void ImprimirLinea(string nombre, string seguro, float tarifa, int horas)
        << setw(12) << nombre
        << setw(14) << seguro
        << setw(5) << tarifa*horas;
+}
+
+void CrearArchivo(string nombre_archivo){
+/* En el archivo creado se separará cada item con una ",", de forma que se pueda usar getline evitando el problema
+que surge debido al espacio en el nombre de los usuarios */
+  
+  ofstream archivo_sal;
+
+  archivo_sal.open(nombre_archivo);
+  archivo_sal << endl;
+  
+  vector <string> Nombres{ "B Caldwell", "D Memcheck", "R Potter", "W Rosen" };
+  vector <string> SeguroSocial{ "555-88-2222", "555-77-4444", "555-77-6666", "555-99-8888"};
+  vector <float> TarifaHora{ 7.32, 8.32, 6.54, 9.80 };
+  vector <int> HorasTrabajadas{ 37, 40, 40,35 };
+  
+  for (int i = 0; i < Nombres.size(); i++){
+   
+    archivo_sal << setiosflags(ios::right | ios::showpoint ) << setprecision(3) //Poniendo las flags deseadas y la precision
+		<< setw(10) << Nombres[i] << ","
+		<< setw(12) << SeguroSocial[i] << ","
+		<< setw(5) << TarifaHora[i] << ","
+		<< setw(3) << HorasTrabajadas[i] << ","
+		<< endl;
+  }
+  
 }
