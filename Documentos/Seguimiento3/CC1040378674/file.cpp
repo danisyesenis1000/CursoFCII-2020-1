@@ -9,6 +9,8 @@ void show_payroll_list(std::ifstream &ifs);
 
 
 int main(){
+    // objeto ofstream, con el que se escribiran datos para el
+    // calculo de la nomina en el archivo payroll
     std::ofstream ofs("payroll.txt", std::ofstream::out);
 
     if(ofs.fail()){
@@ -16,10 +18,13 @@ int main(){
         exit(1);
     }
 
+    // se escriben los datos en el archivo
     create_file(ofs);
 
     ofs.close();
 
+    // objeto ifstream, con el que se escribiran datos para el
+    // calculo de la nomina en el archivo payroll
     std::ifstream ifs("payroll.txt", std::ifstream::in);
 
     if(ifs.fail()){
