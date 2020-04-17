@@ -59,11 +59,11 @@ void Nomina(char Nombres[][10], char Tarifas[][20], float * Horas, float * Traba
       exit( 1 );
     }
 
-  float Pago = 0.0;
+  float *Pago;
 
   for (int i = 0; i < 4; i++)      // Ciclo que saca la nomina y despliega en pantalla.
     {
-      Pago += Horas[i] * Trabajadas[i];
+      Pago[i] = Horas[i] * Trabajadas[i];
       cout << left << setw( 10 ) << Nombres[i] << setw( 13 )
 	   << Tarifas[i] << setw( 10 ) << setprecision( 2 ) << right
 	   << Pago << endl;
