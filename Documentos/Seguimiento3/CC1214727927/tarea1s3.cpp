@@ -28,11 +28,13 @@ void imprimirLinea(const string nombre, float TarifaporHora, int HorasTrabajadas
 
 void funcionarchivo(ifstream *datos)
 {
-  if ( !datos ) 
+  
+  if ( datos->fail() )   
     {
       cout << "No se pudo abrir el archivo" << endl;
       exit( 1 );
-    }
+      }
+  
   char nombre[ 30 ];
   float TarifaporHora;
   int HorasTrabajadas;
