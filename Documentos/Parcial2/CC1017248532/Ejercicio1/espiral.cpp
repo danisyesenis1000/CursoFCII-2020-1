@@ -15,10 +15,10 @@ void Espiral::PrintTimeEvolution(){
     
     file.open("datos_espiral.csv");
     
-    file << "x,y,z" << endl;
+    file << "t,x,y,z" << endl;
     
     for(int i = 0; i < N; i++){
-        file << Circular::xpos(i*dT) << "," << Circular::ypos(i*dT) << "," << zpos(i*dT) << endl;
+      file << i*dT << "," << Circular::xpos(i*dT) << "," << Circular::ypos(i*dT) << "," << zpos(i*dT) << endl;
         
     }
 }

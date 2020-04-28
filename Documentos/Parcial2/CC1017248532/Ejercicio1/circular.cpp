@@ -29,10 +29,10 @@ void Circular::PrintTimeEvolution(){
     
     file.open("datos_circular.csv");
     
-    file << "x,y" << endl;
+    file << "t,x,y" << endl;
     
     for(int i = 0; i < N; i++){
-        file << xpos(i*dT) << "," << ypos(i*dT) << endl;
+      file << i*dT << "," << xpos(i*dT) << "," << ypos(i*dT) << endl;
         
     }
 }
