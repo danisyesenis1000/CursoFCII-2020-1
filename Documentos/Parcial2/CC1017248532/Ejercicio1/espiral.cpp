@@ -21,6 +21,7 @@ void Espiral::PrintTimeEvolution(){
       file << i*dT << "," << Circular::xpos(i*dT) << "," << Circular::ypos(i*dT) << "," << zpos(i*dT) << endl;
         
     }
+  file.close();
 }
 
 Espiral::~Espiral(){
