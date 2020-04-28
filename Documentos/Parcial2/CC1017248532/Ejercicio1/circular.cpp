@@ -36,5 +36,6 @@ void Circular::PrintTimeEvolution(){
       file << i*dT << "," << xpos(i*dT) << "," << ypos(i*dT) << endl;
         
     }
+  file.close();
 }
 
