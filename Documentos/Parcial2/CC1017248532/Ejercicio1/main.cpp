@@ -11,12 +11,13 @@ int main(){
     double dt = 0.01;
     int n = 10000;
     double a = 0.0;
+    double t = n*dt;
     
     double zo = 0;
     double vz = 1;
     
-    Espiral E(r,w,dt,n,a, zo, vz);
-    Circular C(r,w,dt,n,a);
+    Espiral E(r,w,dt,t,n,a, zo, vz);
+    Circular C(r,w,dt,t,n,a);
     
     C.PrintTimeEvolution();
     E.PrintTimeEvolution();

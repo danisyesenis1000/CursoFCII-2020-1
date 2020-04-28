@@ -1,7 +1,7 @@
 #include "utils/espiral.h"
 
-Espiral::Espiral(double R, double W, double dT, int N, double Phi, double z0, double vz) 
-: Circular(R, W, dT, N, Phi), Z0(z0), Vz(vz) {}
+Espiral::Espiral(double R, double W, double dT, double T, int N, double Phi, double z0, double vz) 
+: Circular(R, W, dT, T, N, Phi), Z0(z0), Vz(vz) {}
 
 
 double Espiral::zpos(double t){

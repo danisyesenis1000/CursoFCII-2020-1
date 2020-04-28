@@ -6,7 +6,7 @@
 class Espiral : public Circular {
 
  public:
-  Espiral(double, double, double, int, double, double , double );
+  Espiral(double, double, double, double, int, double, double , double );
   ~Espiral();
   
   double zpos(double );

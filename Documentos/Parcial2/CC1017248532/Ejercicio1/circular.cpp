@@ -1,10 +1,11 @@
 #include "utils/circular.h"
 
-Circular::Circular(double r, double w, double dt, int n, double phi){
+Circular::Circular(double r, double w, double dt, double t, int n, double phi){
 
   R = r;
   W = w;
   dT = dt;
+  T = t;
   N = n;
   Phi = phi;
 }

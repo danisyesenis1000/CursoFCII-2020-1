@@ -14,7 +14,8 @@ class Circular{
   Circular(        // constructor  
 	   double, // radio del circulo
 	   double, // frecuencia angular
-	   double, // tiempo total
+	   double, // pequeño intervalo de tiempo
+       double, // tiempo total
 	   int, // numero de intervalos
 	   double  // fase
 	   ); 
@@ -32,6 +33,7 @@ class Circular{
   double R;
   double W;
   double dT;
+  double T;
   int N;
   double Phi;
 };
