@@ -37,7 +37,7 @@ int main()
                           {'#','o','o','o','o','o','o','#','o','o','o','#'},
                           {'#','#','#','#','#','#','#','#','#','#','#','#'}};
   
-  // Se llama la función que recorre el laberinto.
+  // Se llama la función que recorre el laberinto, con las posiciones iniciales del primer 'o'
   
   RecorrerLaberinto(Laberinto, xi, yi, derecha);
   return 0;
