@@ -6,7 +6,7 @@ class Circular
   ~Circular();
   double xpos( double);
   double ypos( double);
-  //void Mostrar();
+  
   
   double R;
   double w;
@@ -22,7 +22,6 @@ class Espiral : public Circular
 {
  public:
   Espiral(double,double,double,double,double,double,int,double);
-  //:Circular(R,w,dt,t,n,alpha){}
   ~Espiral();
   double Mov_z(double, double,double);
   void Mostrar();
