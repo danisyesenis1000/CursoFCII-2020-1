@@ -39,4 +39,6 @@ std::ostream& operator<< (std::ostream &out, const Complex &complex){
     }else{
         out << complex.m_x << (complex.m_y > 0 ? " + " : " - ") << fabs(complex.m_y) << 'i';
     }
+
+    return out;
 }
