@@ -1,0 +1,4 @@
+En el código realizado por partes, hay una diferencias en la implementación
+comparado con el hecho en conjunto, la diferencia es como se definen funciones
+En las clases, esto debido a que de lo contrario la función no sería bien 
+Leída por el main, en la hecha en conjunto, solo se hizo una función llamada listas, dan lo mismo claramente, pero acá nos muestra una pequeña diferencia de notación y forma de escritura cuando se raliza en clases que puede ser mucho más útil
