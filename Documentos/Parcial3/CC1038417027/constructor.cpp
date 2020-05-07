@@ -42,7 +42,7 @@ void metodo::paso()
     }
   
   x[0]=inicioX;
-  for (int i=1;i<=N+1;i++)
+  for (int i=1;i<=N;i++)
     {
       if (i==1)
 	{
@@ -104,4 +104,5 @@ void imprimir(const vector<double> &arreglo1, const vector<double> &arreglo2)
 }
 
 metodo::~metodo(){
+    free(func);
 }

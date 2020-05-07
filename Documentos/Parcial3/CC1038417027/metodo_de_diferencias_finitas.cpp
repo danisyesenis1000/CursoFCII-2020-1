@@ -31,5 +31,5 @@ int main()
   metodo a(50,2,20,-1,-0.05,fa);
   a.paso();
 
-  a.~metodo();
+  free(fa);
 }
