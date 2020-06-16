@@ -1,0 +1,10 @@
+Para ejecutar el algoritmo en el orden que no genere fallo seguir los siguientes indicativos
+
+-El archivo de metodo_de_diferencias_finitas.h es el archivo que contiene los valores de la clase
+
+-El constructor.cpp como su nombre lo dice es el que tiene el constructor de la clase que se creo, ademas el archivo de metodo_de_diferencias_finitas.cpp es el que posee el ejecutador de la clase, por tanto estos dos archivos se ejecutan de forma conjunta.####(g++ metodo_de_diferencias_finitas.cpp constructor.cpp)#### 
+
+
+-Valores.txt es el archivo de texto que almacena los datos generados por el metodo de diferencias finitas, este no es necesario tocarlo.
+
+-graficar.py lo que hace es generar un grafico, para ejecutar este programa se utiliza el comando ####(python graficar.py)#### , hay que tener en cuenta que debe estar instalado en el computador python 3 junto con las respectivas liberias numpy y matplotlib, que son las encargadas de abrir el archivo valores.txt y graficarlo. 
