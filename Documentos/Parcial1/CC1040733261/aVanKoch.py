@@ -11,7 +11,7 @@ def copoVonkoch(l, n):
     y_vertice1 = 0
      
     x_vertice2 = l * cos ( 2 * pi/3)
-    y_vertice2 = l * sin(2 * pi/3)
+    y_vertice2 = l * sin ( 2 * pi/3)
      
     x_vertice3 = l * cos (pi/3)
     y_vertice3 = l * sin(pi/3)
@@ -49,5 +49,5 @@ def curvaVonkoch(xi, yi, xf, yf, n):
     return
    
 plt.figure("Koch snowflack")
-copoVonkoch(200,2) # range 1 -6
+copoVonkoch(200,3) # range 1 -6
 plt.show()
